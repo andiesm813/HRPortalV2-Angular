@@ -1,0 +1,28 @@
+<igx-navbar class="navbar">
+  <igx-navbar-title>
+    Rapid Fission Inc.
+    <button igxButton="flat" igxRipple routerLink="/home" class="button">
+      HOME
+    </button>
+    <button igxButton="flat" igxRipple routerLink="/my-info" class="button">
+      MY INFO
+    </button>
+    <button igxButton="flat" [disabled]="true" igxRipple class="button">
+      PEople
+    </button>
+    <button igxButton="flat" [disabled]="true" igxRipple class="button">
+      MY FILES
+    </button>
+  </igx-navbar-title>
+  <div class="row-layout group">
+    <button igxButton="icon" igxRipple class="button_1">
+      <igx-icon>
+        notifications
+      </igx-icon>
+    </button>
+    <igx-avatar src="/assets/Avatar6.png" [roundShape]="true" class="avatar"></igx-avatar>
+  </div>
+</igx-navbar>
+<div class="view-container">
+  <router-outlet></router-outlet>
+</div>
